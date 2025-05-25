@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body
+        {
+            background-color: aqua;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #tab
+        {
+            margin-top:20px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="../php/submit/2_calculate.php" method="post">
+        <table id="tab" align="center" >
+        <tr>
+            <td colspan="2"><input type="number"  name="amount" id="amount" placeholder="Enter amount" required></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="number" name="rate" id="rate" placeholder="Enter rate" required></td>
+        </tr>
+        <tr>
+            <td><select name="year" id="year" >
+                <option value="">Select Year</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select></td>
+        </tr>
+        <tr>
+           <td colspan="2">
+             <input type="submit" id="" value="Find Interest" >
+           </td>
+        </tr>
+      
+    </table>
+
+    </form>
+</body>
+</html>
+
